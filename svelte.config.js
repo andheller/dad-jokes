@@ -1,7 +1,7 @@
 import preprocess from "svelte-preprocess";
 import tailwind from "tailwindcss";
 import autoprefixer from "autoprefixer";
-import static from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-static";
 
 const warnIgnores = {
     "css-unused-selector": {
