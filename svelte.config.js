@@ -34,6 +34,9 @@ const config = {
             // default options are shown
             pages: "build",
             assets: "build",
+            target: "#svelte",
+            hydrate: false,
+            router: false,
             fallback: null,
         }),
     },
