@@ -6,6 +6,8 @@
   let visible = false;
 </script>
 
+<svelte:head><title>Halloween Jokes</title>'</svelte:head>
+
 <Nav />
 
 <div class="hero-bg">
@@ -26,15 +28,15 @@
             visible = true;
             setTimeout(function () {
               visible = false;
-            }, 3000);
+            }, 800);
           }}
           class="text-white relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600"
         >
           New Joke
         </button>
       </div>
-      <div class={visible ? "" : "hidden"}>
-        <Confetti durationInSeconds={2.7} />
+      <div class="svgConfetti {visible ? '' : 'opacity-0'}">
+        <Confetti durationInSeconds={2} />
       </div>
     </div>
   </div>
@@ -52,5 +54,8 @@
       rgb(17, 24, 39),
       rgb(0, 0, 0)
     );
+  }
+  .svgConfetti {
+    transition: all 0.15s ease;
   }
 </style>

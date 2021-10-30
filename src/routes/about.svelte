@@ -22,10 +22,19 @@
 <div class="relative px-4 sm:px-6 lg:px-8">
   <div class="text-lg max-w-prose mx-auto">
     <p class="mt-8 text-xl text-gray-700 leading-8">
-      Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu,
-      sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat
-      egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend
-      egestas fringilla sapien.
+      Sveltekit project running on CloudFlare Pages using Cloudflare workers and
+      CloudFlare KV! Thank you to <a
+        class="underline text-[#db3e6d]"
+        href="http://icanhazdadjoke.com/">icanhazdadjoke.com</a
+      >
+      for all the jokes. <br /> <br />
+      See the Repo on
+      <a
+        class="underline text-[#db3e6d]"
+        href="https://github.com/andheller/dad-jokes"
+      >
+        GitHub</a
+      >
     </p>
   </div>
 </div>
