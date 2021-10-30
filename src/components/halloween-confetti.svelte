@@ -2,10 +2,9 @@
   import { quadIn } from "svelte/easing";
   import { onMount } from "svelte";
 
-  export let numberOfElements = 30;
-  export let durationInSeconds = 2;
+  export let numberOfElements = 25;
+  export let durationInSeconds = 1;
   export let timeout;
-
 
   let showConfetti = true;
 
@@ -35,7 +34,6 @@
   {#each allElements as [element, color, scale], i}
     <g style="transform: scale({scale})">
       <g
-        
         style={[
           `--rotation: ${Math.random() * 360}deg`,
           `animation-delay: ${quadIn(i / numberOfElements)}s`,
