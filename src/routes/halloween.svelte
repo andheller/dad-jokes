@@ -35,7 +35,7 @@
           New Joke
         </button>
       </div>
-      <div class="svgConfetti {visible ? '' : 'opacity-0'}">
+      <div class="svgConfetti small {visible ? '' : 'hidden'}">
         <Confetti durationInSeconds={2} />
       </div>
     </div>

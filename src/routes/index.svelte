@@ -26,7 +26,7 @@
             visible = false;
           }, 1500);
         }}
-        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-blue-50 hover:bg-blue-100"
+        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-900 bg-green-50 hover:bg-green-100"
       >
         New Joke
       </a>
@@ -43,6 +43,11 @@
 
 <style>
   .hero-bg {
-    background: linear-gradient(to right, rgb(56, 189, 248), rgb(59, 130, 246));
+    background: radial-gradient(
+      at 140% bottom,
+      rgb(167, 243, 208),
+      rgb(19, 78, 74),
+      rgb(6, 78, 59)
+    );
   }
 </style>

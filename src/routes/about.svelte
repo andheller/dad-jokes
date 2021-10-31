@@ -1,9 +1,5 @@
 <script>
-  import { fetchJoke } from "../jokestore";
   import Nav from "../components/Nav.svelte";
-  import JokeCard from "../components/JokeCard.svelte";
-  import Confetti from "../components/confetti.svelte";
-  let visible = false;
 </script>
 
 <svelte:head><title>About</title></svelte:head>
@@ -22,15 +18,33 @@
 <div class="relative px-4 sm:px-6 lg:px-8">
   <div class="text-lg max-w-prose mx-auto">
     <p class="mt-8 text-xl text-gray-700 leading-8">
-      Sveltekit project running on CloudFlare Pages using Cloudflare workers and
-      CloudFlare KV! Thank you to <a
-        class="underline text-[#db3e6d]"
-        href="http://icanhazdadjoke.com/">icanhazdadjoke.com</a
+      This is a <a
+        class="underline text-[#f97316]"
+        href="https://kit.svelte.dev/">Sveltekit</a
+      >
+      project running on
+      <a class="underline text-[#f97316]" href="https://pages.cloudflare.com/"
+        >CloudFlare Pages</a
+      >
+      using
+      <a class="underline text-[#f97316]" href="https://workers.cloudflare.com/"
+        >Cloudflare workers</a
+      >
+      and
+      <a
+        class="underline text-[#f97316]"
+        href="https://developers.cloudflare.com/workers/runtime-apis/kv"
+        >CloudFlare KV!</a
+      >
+      <br /><br />
+      Thank you to
+      <a class="underline text-[#f97316]" href="http://icanhazdadjoke.com/"
+        >icanhazdadjoke.com</a
       >
       for all the jokes. <br /> <br />
       See the Repo on
       <a
-        class="underline text-[#db3e6d]"
+        class="underline text-[#f97316]"
         href="https://github.com/andheller/dad-jokes"
       >
         GitHub</a
@@ -41,10 +55,12 @@
 
 <style>
   .hero-bg {
-    background: conic-gradient(
-      at left center,
-      rgb(244, 63, 94),
-      rgb(67, 56, 202)
+    background: linear-gradient(
+      to right,
+      #f97316,
+      rgb(243, 87, 3),
+      rgb(249, 115, 22),
+      #fbbf24
     );
   }
 </style>

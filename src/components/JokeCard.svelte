@@ -1,7 +1,7 @@
 <script>
   import { jokeArr } from "../jokestore";
-  import { flip } from 'svelte/animate';
-  const options = {duration: 350};
+  import { flip } from "svelte/animate";
+  const options = { duration: 350 };
   function favorite(id) {
     $jokeArr.find((x) => x.id === id).favorite = !$jokeArr.find(
       (x) => x.id === id
@@ -18,10 +18,10 @@
 <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
   {#each $jokeArr as item (item.id)}
     <li
-    animate:flip={options}
+      animate:flip={options}
       class="bg-white jokeCard col-span-1 rounded-lg shadow-md divide-y divide-gray-200 flex flex-col {item.favorite ===
       true
-        ? 'border-[#7DD3FC] border-2'
+        ? 'border-[#10B981] border-2'
         : 'border-white-500 border-2'} "
     >
       <div
@@ -41,7 +41,7 @@
           <a
             href="#"
             on:click={favorite(item.id)}
-            class="bg-white relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg  hover:text-blue-900 bg-gradient-to-r hover:from-green-50 hover:to-blue-100 cursor-pointer"
+            class="bg-white relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg  hover:text-green-900 bg-gradient-to-r hover:from-green-50 hover:to-green-100 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
