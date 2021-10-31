@@ -68,7 +68,7 @@
         <div
           class="{open
             ? 'block'
-            : 'hidden'} mobile-menu bg-white sm:ml-6 flex flex-col sm:flex-row sm:flex sm:space-x-8"
+            : 'hidden'} mobile-menu bg-white sm:ml-6 flex flex-col sm:flex-row sm:flex sm:space-x-8 z-10"
         >
           <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <a
