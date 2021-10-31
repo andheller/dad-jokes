@@ -73,8 +73,7 @@
           <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
           <a
             href="/"
-            class="{$page.path === '/' ? 'text-gray-900 ' : 'text-gray-500'}
-            inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+            class="text-gray-500 inline-flex items-center px-1 pt-1 hover:border-b-2 text-sm font-medium"
           >
             Jokes
           </a>
@@ -128,6 +127,10 @@
       top: 62px;
       left: 0;
       min-width: 100%;
+    }
+    .mobile-menu a {
+      font-size: 18px !important;
+      margin-bottom: 5px;
     }
   }
 </style>
