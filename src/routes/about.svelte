@@ -41,7 +41,9 @@
       <a class="underline text-[#f97316]" href="http://icanhazdadjoke.com/"
         >icanhazdadjoke.com</a
       >
-      for all the jokes. <br /> <br />
+      for all the jokes! The normal jokes are pulling from the icanhazdadjoke API,
+      and the Halloween jokes are pulling from jokes that are stored in Cloudflare
+      KV. <br /> <br />
       See the Repo on
       <a
         class="underline text-[#f97316]"
